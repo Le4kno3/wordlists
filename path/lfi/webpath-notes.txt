@@ -1,0 +1,7 @@
+- linux
+	- only web paths say inside "/var/www". 
+	- because the current user can only propogate to the current www folder only.
+
+- windows
+	- only web apths inside "apache2" or "xampp" or "iis", etc
+	- because the current user can only propogate to the current web server and web related files only.

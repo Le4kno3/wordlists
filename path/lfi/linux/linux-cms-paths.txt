@@ -1,0 +1,6 @@
+/var/www/html/wp-config.php
+/var/www/configuration.php
+/var/www/html/inc/header.inc.php
+/var/www/html/sites/default/settings.php
+/var/www/configuration.php
+/var/www/config.php

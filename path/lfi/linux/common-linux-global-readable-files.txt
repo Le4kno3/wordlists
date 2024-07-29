@@ -1,0 +1,8 @@
+/var/log/auth.log
+/etc/group
+/etc/shadow
+/etc/hosts
+/proc/self/status
+/proc/self/environ
+/etc/profile
+/etc/passwd
