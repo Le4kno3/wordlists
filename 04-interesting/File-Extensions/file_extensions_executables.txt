@@ -1,0 +1,6 @@
+.bat
+.exe
+.sh
+.zsh
+.py
+.ps1
