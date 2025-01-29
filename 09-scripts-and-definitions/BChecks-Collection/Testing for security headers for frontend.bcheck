@@ -1,0 +1,27 @@
+metadata:
+    language: v2-beta
+    name: "Passive Check"
+    description: "Check if the standard frontend security headers are used."
+
+given host then
+    if not("X-Frame-Options: DENY" in {latest.response.headers} or "X-Frame-Options: SAMEORIGIN" in {latest.response.headers}) then
+		    report issue and continue:
+		        severity: info
+		        confidence: tentative
+		        detail: "X-Frame-Options header is either not present or is misconfigured. This is marked as tentative, as it needs to be further checked if the endpoint has a frontend UI or not."
+		        remediation: "The response header should have -> X-Frame-Options: DENY/SAMEORIGIN."
+    end if
+    if not("X-Content-Type-Options: nosniff" in {latest.response.headers}) then
+            report issue and continue:
+                severity: info
+                confidence: tentative
+                detail: "Content-Type security is not properly enforced. This is marked as tentative, as it needs to be further checked if the endpoint has a frontend UI or not."
+                remediation: "The response should have -> X-Content-Type-Options: nosniff"
+    end if
+    if not("Content-Security-Policy:" in {latest.response.headers}) then
+            report issue and continue:
+                severity: info
+                confidence: tentative
+                detail: "Content-Security-Policy is missing in the response header. This is marked as tentative, as it needs to be further checked if the endpoint has a frontend UI or not."
+                remediation: "The response header should have -> Content-Security-Policy"
+    end if

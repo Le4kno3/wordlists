@@ -1,0 +1,21 @@
+metadata:
+    language: v2-beta
+    name: "Passive Check"
+    description: "Check if the improper cache control security headers are used."
+
+given host then
+    if "Cache-Control: no-cache, no-store, must-revalidate" in {latest.response.headers} then
+        if not("Pragma: no-cache" in {latest.response.headers} and "Expires: -1" in {latest.response.headers}) then
+            report issue:
+                severity: info
+                confidence: firm
+                detail: "Cache Control is not properly set."
+                remediation: "Pragma: no-cache or Expires: -1, is missing in cache control header."
+        end if
+        else then
+            report issue:
+            severity: low
+            confidence: firm
+            detail: "Required Cache Control header is not set."
+            remediation: "All responses should have this header - Cache-control: no-cache, no-store, must-revalidate."
+    end if

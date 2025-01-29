@@ -1,0 +1,24 @@
+# Step 1: write metadata to give information about the script and logic.
+metadata:
+    language: v2-beta
+    name: "Check for CORS Misconfigurations"
+    description: "Checks if CORS header can be influenced by attacker"
+    author: "Takshil Patil"
+
+# Step 2
+given host then
+    # prepare the final URL and send request
+    send request called check:
+        method: {dangerous_methods}
+        path: {latest.request.url.path}
+        appending headers:
+            "Origin": "www.attacker.com"
+
+    if "attacker.com" in {check.response.headers} then
+        # Step 3: Reporting
+        report issue:
+            severity: info
+            confidence: tentative
+            detail: `This {dangerous_methods} method is enabled on this endpoint.`
+            remediation: "Ideally GET or POST methods should be used wherever possible."
+    end if

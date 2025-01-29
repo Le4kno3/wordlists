@@ -1,0 +1,13 @@
+metadata:
+    language: v2-beta
+    name: "Passive Check"
+    description: "Check if the response headers implements strict transport security"
+
+given host then
+    if not("Strict-Transport-Security: max-age=31536000; includeSubDomains" in {latest.response.headers}) then
+        report issue:
+            severity: low
+            confidence: tentative
+            detail: "Strict Transport Security is not enforced properly. The findnig is marked as tentavie as further checks are needed. If the endpoint is external facing, then only it is a security issue, else no issue"
+            remediation: "HSTS header should be set to -> Strict-Transport-Security: max-age=31536000; includeSubDomains"
+    end if

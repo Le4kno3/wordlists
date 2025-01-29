@@ -1,0 +1,31 @@
+# Step 1
+metadata:
+    language: v2-beta
+    name: "Check for dangerous functions"
+    description: "Checks for an dangerous functions present. More testing is needed after this detection"
+    author: "Takshil Patil"
+
+# Prepare Step 2
+run for each:
+    dangerous_methods =
+        "DELETE",
+        "PUT",
+        "TRACE",
+        "CONNECT"
+
+# Step 2
+# This check will run for each unique host once.
+given host then
+    # create a new request and reference it as "check" using path of the triggered (latest) request.
+    send request called check:
+        method: {dangerous_methods}
+        path: {latest.request.url.path}
+
+    if "200" in {check.response.status_code} then
+        # Reporting
+        report issue:
+            severity: info
+            confidence: tentative
+            detail: `This {dangerous_methods} method is enabled on this endpoint.`
+            remediation: "Ideally GET or POST methods should be used wherever possible."
+    end if
