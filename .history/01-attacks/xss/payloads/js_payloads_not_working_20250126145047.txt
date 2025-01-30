@@ -1,0 +1,4 @@
+alert({PAYLOAD})
+confirm({PAYLOAD})
+print({PAYLOAD})
+[0].with(0,alert).splice(0,1).at(0)({PAYLOAD});

