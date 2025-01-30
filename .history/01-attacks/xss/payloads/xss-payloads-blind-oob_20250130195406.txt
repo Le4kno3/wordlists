@@ -1,7 +1,2 @@
-alert({PAYLOAD})
-confirm({PAYLOAD})
-print({PAYLOAD})
-[0].with(0,alert).splice(0,1).at(0)({PAYLOAD});
-a=prompt({PAYLOAD}),a();
 const sleep = ms => new Promise(r => setTimeout(r, 30000));
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, 30000));
