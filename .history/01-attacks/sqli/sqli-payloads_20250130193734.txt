@@ -1,4 +1,4 @@
-# Template - for MySQL, MSSQL
+# Template
 {INPUT_COMPLETE}{SQLI_PAYLOAD}{FORCE_END}
 
 # True false based sqli payloads

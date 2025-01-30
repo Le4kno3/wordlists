@@ -1,0 +1,7 @@
+# True false based sqli payloads
+
+
+# Time based sqli payloads
+
+
+# OOB based sqli payloads

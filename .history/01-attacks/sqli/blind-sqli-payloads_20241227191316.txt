@@ -1,1 +1,0 @@
-# These are the list of conditional and time based sqli payloads.
