@@ -1,0 +1,28 @@
+metadata:
+    language: v2-beta
+    name: "Insecure Cookie Security"
+    description: "Check when Set-Cookie is there in response, it always has cookie security"
+    author: "Takshil Patil"
+
+# Step 2: Active check for each path once, first removes cookie, then analyze the response
+given path then    # for each unique path
+    send request called check:  #send a new request and remove the cookie header
+        removing headers:
+            "Cookie"        
+    if {check.response.headers} matches "(?sm)^Set-Cookie.*?Set-Cookie" then
+        report issue:
+            severity: info
+            confidence: tentative
+            detail: "Duplicate Set-Cookie header, hence this check cannot be relied in this case."
+            remediation: "You need test Cookie Security manually"
+        else then
+            if "Set-Cookie" in {check.response.headers} then
+                if not("HttpOnly;" in {check.response.headers} and "Secure;" in {check.response.headers}) then
+	                 report issue:
+	                     severity: low
+	                     confidence: firm
+	                     detail: "Cookie security is not properly implemented."
+	                     remediation: "Every Set-Cookie server response should have 'HttpOnly' 'Secure' attributes"
+	             end if
+	         end if
+    end if

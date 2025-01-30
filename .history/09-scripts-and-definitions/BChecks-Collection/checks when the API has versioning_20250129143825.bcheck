@@ -1,0 +1,15 @@
+#define metadata
+metadata:
+    language: v2-beta
+    name: "API versioning is present"
+    description: "Check to verify if the API has versioning or not"
+    author: "Takshil Patil"
+
+# define when this will be called.
+given path run
+    if {latest.response.path} matches "\/v[1-9]{1}\/" then
+        report issue:
+            severity: info
+            confidence: tentative
+            detail: "Check if previous or future versions are accessible."
+            remediation: "Strict API versioning policy should be governed and enforced."

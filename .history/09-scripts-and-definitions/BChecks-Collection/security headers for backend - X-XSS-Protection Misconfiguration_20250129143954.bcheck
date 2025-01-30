@@ -1,0 +1,13 @@
+metadata:
+    language: v2-beta
+    name: "Passive Check"
+    description: "Check if the headers follow has X-XSS-Protection misconfiguration"
+
+given host then
+    if "X-XSS-Protection: 1" in {latest.response.headers} or "X-Xss-Protection: 1" in {latest.response.headers} then
+        report issue:
+            severity: low
+            confidence: firm
+            detail: "X-XSS-Protection header misconfiguration was found."
+            remediation: "X-XSS-Protection header should be set to 0 and should be disabled."
+    end if
