@@ -14,7 +14,7 @@ def queueRequests(target, wordlists):
         requestsPerConnection=1,
         pipeline=False,
         maxRetriesPerRequest=1,
-        engine=Engine.THREADED
+        engine=Engine.BURP
     )
 
     for payload in open(payload_path):
