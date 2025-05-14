@@ -14,6 +14,10 @@ if __name__ == '__main__':
     helper_NOSQLi_path = ATTACK_HOME + 'templates_and_helpers/helper_NO_SQLi.txt'
     helper_NOSQLi = []
     sqli_final_payload_path = ATTACK_HOME + 'ALL_sqli_payloads'
+    sqli_tf_payload_path = ATTACK_HOME + 'TF_sqli_payloads'
+    sqli_tf_payloads = []
+    nosqli_payload_path = ATTACK_HOME + 'TF_sqli_payloads'
+    nosqli_payloads = []
 
     temp1_sqli_payloads = []
     temp2_sqli_payloads = []
@@ -61,29 +65,43 @@ if __name__ == '__main__':
                     temp1 = sqli_payload.replace('{FORCE_END}', force_end)
                     temp2_sqli_payloads.append(temp1)
 
-        for sqli_payload in temp2_sqli_payloads:
-            # resolve toggle TF
-            if('{TOGGLE_TF}' in sqli_payload):
-                for toggle_TF in helper_toggle_TF:
-                    temp2 = sqli_payload.replace('{TOGGLE_TF}', toggle_TF)
-                    temp3_sqli_payloads.append(temp2)
-
         # We dont need to resovle values, as it is already resolved by Input Complete but still if {VALUE} in final template then
-        for sqli_payload in temp3_sqli_payloads:
+        for sqli_payload in temp2_sqli_payloads:
             # resolve toggle TF
             if('{VALUE}' in sqli_payload):
                 for value in helper_values:
-                    temp3 = sqli_payload.replace('{VALUE}', value)
-                    new_sqli_payloads.append(temp3)
+                    temp2 = sqli_payload.replace('{VALUE}', value)
+                    temp3_sqli_payloads.append(temp2)
+            else:
+                temp3_sqli_payloads.append(sqli_payload)
+        
+        # remove toggle_TF from this list and add it to a seperate true-false list.
+        for sqli_payload in temp3_sqli_payloads:
+            # resolve toggle TF
+            if('{TOGGLE_TF}' in sqli_payload):
+                for toggle_TF in helper_toggle_TF:
+                    temp3 = sqli_payload.replace('{TOGGLE_TF}', toggle_TF)
+                    new_sqli_payloads.append(temp3) # because we need all payloads
+                    sqli_tf_payloads.append(temp3)
             else:
                 new_sqli_payloads.append(sqli_payload)
-        
+
         # Append all NO SQLi payloads, currently the NO SQLi payloads are not customizable. 
         for nosqli_payload in helper_NOSQLi:
             new_sqli_payloads.append(nosqli_payload)
             
 
-    # Finally Write lines in output file which will have the list of all sqli final payloads
+    # Finally Write lines in output file which will have the list of all sqli final payloads.
     with open(sqli_final_payload_path, "w") as sqli_final_file:
         for sqli_payload in new_sqli_payloads:
             sqli_final_file.writelines(f"{sqli_payload}\n")
+    
+    # Write SQLi true false payloads in a separate file.
+    with open(sqli_tf_payload_path, "w") as sqli_tf_file:
+        for sqli_payload in sqli_tf_payloads:
+            sqli_tf_file.writelines(f"{sqli_payload}\n")
+    
+    # Write NOSQLi payloads in a separate file.
+    with open(nosqli_payload_path, "w") as nosqli_file:
+        for nosqli_payload in helper_NOSQLi:
+            nosqli_file.writelines(f"{nosqli_payload}\n")
