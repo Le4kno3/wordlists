@@ -13,7 +13,7 @@ if __name__ == '__main__':
     helper_toggle_TF = []
     helper_NOSQLi_path = ATTACK_HOME + 'templates_and_helpers/helper_NO_SQLi.txt'
     helper_NOSQLi = []
-    sqli_final_payload_path = ATTACK_HOME + 'FINAL_sqli_payloads'
+    sqli_final_payload_path = ATTACK_HOME + 'FINAL_ALL_sqli_payloads'
     sqli_tf_payload_path = ATTACK_HOME + 'FINAL_tf_payloads'
     sqli_tf_payloads = []
     nosqli_payload_path = ATTACK_HOME + 'FINAL_nosqli_payloads'
