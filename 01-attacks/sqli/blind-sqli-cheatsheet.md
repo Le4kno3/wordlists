@@ -29,6 +29,13 @@
   5. Ref: Conditional delays
   6. For time based blind SQLi remove multithreading (default= 5 in Burpsuite)
 
+- If Statements - blind SQL
+  1. MSSQL : `IF (1=1) SELECT 'true' ELSE SELECT 'false'`
+  2. MySQL : `SELECT IF(1=1,'true','false')`
+  3. Oracle : `IF (1=1) THEN dbms_lock.sleep(3); ELSE dbms_lock.sleep(0); END IF;`
+  4. PostgreSQL : `SELECT CASE WHEN (1=1) THEN 'A' ELSE 'B' END;`
+  5. SQLite : `SELECT iif(1<2, "True", "False");`
+
 - Limiting results for a successful SQLi (LIMIT, TOP, ROW, PERCENT)
 
   1. MSSQL : `SELECT * FROM Customers LIMIT 3;`
