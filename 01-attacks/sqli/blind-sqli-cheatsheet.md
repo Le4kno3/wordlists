@@ -13,11 +13,18 @@
   4. Oracle : `--`
   5. PostgreSQL : `--` or `/**/`
 
+- Tables always accessible to a user to run SELECT statement.
+
+  1. MSSQL : We dont need to use FROM clause to run SELECT.
+  2. MySQL : We dont need to use FROM clause to run SELECT. But `dual` is also present so we can use it.
+  3. Oracle : `dual` is a special one-row, one-column table used to select a pseudo row in oracle databases.
+  4. PostgreSQL : We dont need to use FROM clause to run SELECT.
+
 - Time delay - blind SQL
 
   1. MSSQL : `WAITFOR DELAY '0:0:10'`
-  2. MySQL : `SELECT sleep(10)`
-  3. Oracle : `dbms_pipe.receive_message(('a'),10)`
+  2. MySQL : `SELECT sleep(10)` or  `SELECT sleep(10) FROM DUAL`
+  3. Oracle : `SELECT dbms_pipe.receive_message(('a'),10) FROM DUAL;`
   4. PostgreSQL : `SELECT pg_sleep(10)`
   5. Ref: Conditional delays
   6. For time based blind SQLi remove multithreading (default= 5 in Burpsuite)
