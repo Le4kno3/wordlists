@@ -9,8 +9,6 @@ if __name__ == '__main__':
     helper_force_end = []
     helper_values_path = ATTACK_HOME + 'templates_and_helpers/helper_values.txt'
     helper_values = []
-    helper_toggle_TF_path = ATTACK_HOME + 'templates_and_helpers/helper_toggle_TF.txt'
-    helper_toggle_TF = []
     helper_NOSQLi_path = ATTACK_HOME + 'templates_and_helpers/helper_NO_SQLi.txt'
     helper_NOSQLi = []
     sqli_final_payload_path = ATTACK_HOME + 'FINAL_ALL_sqli_payloads.txt'
@@ -27,10 +25,6 @@ if __name__ == '__main__':
     # Prepare Payload - values
     with open(helper_values_path) as file_data:
         helper_values = file_data.read().splitlines()#parse new line delimited array
-
-    # Prepare Payload - toggle true false (TF)
-    with open(helper_toggle_TF_path) as file_data:
-        helper_toggle_TF = file_data.read().splitlines()#parse new line delimited array
 
     # Prepare Payload - force end
     with open(helper_force_end_path) as file_data:
@@ -79,10 +73,12 @@ if __name__ == '__main__':
         for sqli_payload in temp3_sqli_payloads:
             # resolve toggle TF
             if('{TOGGLE_TF}' in sqli_payload):
-                for toggle_TF in helper_toggle_TF:
-                    temp3 = sqli_payload.replace('{TOGGLE_TF}', toggle_TF)
-                    new_sqli_payloads.append(temp3) # because we need all payloads
-                    sqli_tf_payloads.append(temp3)
+                temp3 = sqli_payload.replace('{TOGGLE_TF}', '0')
+                new_sqli_payloads.append(temp3) # because we need all payloads
+                sqli_tf_payloads.append(temp3)
+                temp3 = sqli_payload.replace('{TOGGLE_TF}', '1')
+                new_sqli_payloads.append(temp3) # because we need all payloads
+                sqli_tf_payloads.append(temp3)
             else:
                 new_sqli_payloads.append(sqli_payload)
 
