@@ -1,0 +1,9 @@
+sleep 15
+timeout 15
+echo $((45 + 34))
+45 + 34
+echo $(45 + 34)
+set /a 45+34
+ping -c 15 127.0.0.1
+ping -n 15 127.0.0.1
+nslookup OOB_URL
