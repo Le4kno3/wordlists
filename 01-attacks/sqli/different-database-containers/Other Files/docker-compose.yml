@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+    db-mysql:
+        build: ./mysql
+        ports:
+            - "3306:3306"
+    db-mssql:
+        build: ./mssql
+        ports:
+            - "1433:1433"
+    db-postgres:
+        build: ./postgres
+        ports:
+            - "5432:5432"
+    db-mongo:
+        build: ./mongo
+        ports:
+            - "27017:27017"
