@@ -3,7 +3,8 @@ true, $where: '1 == 1'
 $where: '1 == 1'
 ', $where: '1 == 1'
 1, $where: '1 == 1'
-{ $ne: 1 }
+{$ne:1}
+{"$ne":""}
 ', $or: [ {}, { 'a':'a
 ' } ], $comment:'successful MongoDB injection'
 db.injection.insert({success:1});
@@ -23,3 +24,5 @@ db.injection.insert({success:1});return 1;db.stores.mapReduce(function() { { emi
 ';return 'a'=='a' && ''=='
 ";return(true);var xyz='a
 0;return true
+'\"`{\r;$Foo}\n$Foo \\xYZ\u0000
+this.category == '''
