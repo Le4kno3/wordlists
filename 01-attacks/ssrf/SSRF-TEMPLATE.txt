@@ -1,2 +1,11 @@
 http://{HOSTNAME}:{PORT}
 https://{HOSTNAME}:{PORT}
+file://{HOSTNAME}/etc/passwd
+hTTp://{HOSTNAME}:{PORT}
+HTTP://{HOSTNAME}:{PORT}
+httP://{HOSTNAME}:{PORT}
+HtTp://{HOSTNAME}:{PORT}
+hTTpS://{HOSTNAME}:{PORT}
+HTTPs://{HOSTNAME}:{PORT}
+httPS://{HOSTNAME}:{PORT}
+HtTps://{HOSTNAME}:{PORT}
