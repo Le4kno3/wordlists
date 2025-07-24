@@ -1,0 +1,6 @@
+sleep 20
+timeout 20
+echo $((45 + 34))
+set /a 45+34
+ping -c 20 127.0.0.1
+ping -n 20 127.0.0.1
